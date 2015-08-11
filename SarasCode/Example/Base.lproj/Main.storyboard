@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l7v-6u-zmg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coupon View Controller-->
+        <scene sceneID="mMV-x3-SsH">
+            <objects>
+                <viewController id="l7v-6u-zmg" userLabel="Coupon View Controller" customClass="CouponViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NRg-Aj-Pob"/>
+                        <viewControllerLayoutGuide type="bottom" id="dbN-T7-eXY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ex9-9h-K95">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon_winner" translatesAutoresizingMaskIntoConstraints="NO" id="wTQ-7g-Eqo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="vXt-ji-Rva">
+                                <rect key="frame" x="0.0" y="133" width="320" height="57.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.01270517677" green="0.01270517677" blue="0.01270517677" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ad-gd-AGa">
+                                <rect key="frame" x="0.0" y="198" width="320" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.51000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PT4-MS-9Rj"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PXx-gk-3z9">
+                                <rect key="frame" x="94" y="334" width="133" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="Rcc-bI-WWd"/>
+                                    <constraint firstAttribute="width" constant="133" id="syA-Di-RJU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOs-P5-gK4">
+                                <rect key="frame" x="28" y="479" width="264" height="69"/>
+                                <state key="normal" image="Done_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wTQ-7g-Eqo" firstAttribute="top" secondItem="ex9-9h-K95" secondAttribute="topMargin" id="6Y0-RU-UYK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vXt-ji-Rva" secondAttribute="trailing" constant="-16" id="8a5-0d-Bcg"/>
+                            <constraint firstItem="vXt-ji-Rva" firstAttribute="leading" secondItem="ex9-9h-K95" secondAttribute="leadingMargin" constant="-16" id="9UL-Oy-dV7"/>
+                            <constraint firstItem="dbN-T7-eXY" firstAttribute="top" secondItem="YOs-P5-gK4" secondAttribute="bottom" constant="20" id="HjN-Ly-vtc"/>
+                            <constraint firstItem="7Ad-gd-AGa" firstAttribute="leading" secondItem="ex9-9h-K95" secondAttribute="leadingMargin" constant="-16" id="Qcx-bK-pAh"/>
+                            <constraint firstAttribute="centerX" secondItem="PXx-gk-3z9" secondAttribute="centerX" id="UWD-ZJ-81B"/>
+                            <constraint firstItem="YOs-P5-gK4" firstAttribute="leading" secondItem="ex9-9h-K95" secondAttribute="leadingMargin" constant="12" id="Wja-6B-tkM"/>
+                            <constraint firstItem="dbN-T7-eXY" firstAttribute="top" secondItem="wTQ-7g-Eqo" secondAttribute="bottom" id="X3T-c2-YVN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YOs-P5-gK4" secondAttribute="trailing" constant="12" id="aE7-Ol-Uma"/>
+                            <constraint firstItem="vXt-ji-Rva" firstAttribute="top" secondItem="NRg-Aj-Pob" secondAttribute="bottom" constant="113" id="baZ-B0-7RU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wTQ-7g-Eqo" secondAttribute="trailing" constant="-16" id="gep-z0-OuX"/>
+                            <constraint firstItem="wTQ-7g-Eqo" firstAttribute="leading" secondItem="ex9-9h-K95" secondAttribute="leadingMargin" constant="-16" id="mxF-ir-h8B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Ad-gd-AGa" secondAttribute="trailing" constant="-16" id="rRV-TL-zk5"/>
+                            <constraint firstItem="7Ad-gd-AGa" firstAttribute="top" secondItem="vXt-ji-Rva" secondAttribute="bottom" constant="7.5" id="xQe-Vx-NIQ"/>
+                            <constraint firstItem="PXx-gk-3z9" firstAttribute="top" secondItem="7Ad-gd-AGa" secondAttribute="bottom" constant="8" id="xs9-G0-qP6"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="businessCouponDescription" destination="7Ad-gd-AGa" id="Him-RX-ubD"/>
+                        <outlet property="businessNameLabel" destination="vXt-ji-Rva" id="RMo-z2-sA9"/>
+                        <outlet property="couponCode" destination="PXx-gk-3z9" id="of9-ZQ-faR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akY-04-BA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="253"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Done_button" width="264" height="69"/>
+        <image name="coupon_winner" width="320" height="568"/>
+    </resources>
+</document>
